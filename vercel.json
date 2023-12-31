@@ -1,12 +1,15 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/gh/(.*)",
-      "destination": "https://cdn.jsdelivr.net/$1"
+      "src": "/gh/(.*)",
+      "headers": {
+        "host": "cdn.jsdelivr.net"
+      },
+      "dest": "https://cdn.jsdelivr.net/$1"
     },
     {
-      "source": "/(.*)",
-      "destination": "/$1"
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
