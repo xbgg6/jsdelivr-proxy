@@ -1,0 +1,22 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/gh/:path*",
+      "headers": {
+        "host": "cdn.jsdelivr.net"
+      }
+    },
+    {
+      "source": "/",
+      "destination": "/gh/index.html",
+      "headers": {
+        "host": "cdn.jsdelivr.net"
+      }
+    },
+    {
+      "source": "/",
+      "destination": "/index.html"
+    }
+  ]
+}
