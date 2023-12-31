@@ -1,16 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/:path*",
-      "destination": "/gh/:path*"
+      "source": "/gh/(.*)",
+      "destination": "https://cdn.jsdelivr.net/$1"
     },
     {
-      "source": "/",
-      "destination": "/gh/index.html"
-    },
-    {
-      "source": "/",
-      "destination": "/index.html"
+      "source": "/(.*)",
+      "destination": "/$1"
     }
   ]
 }
