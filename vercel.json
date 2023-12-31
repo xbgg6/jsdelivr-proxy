@@ -2,17 +2,11 @@
   "rewrites": [
     {
       "source": "/:path*",
-      "destination": "/gh/:path*",
-      "headers": {
-        "host": "cdn.jsdelivr.net"
-      }
+      "destination": "/gh/:path*"
     },
     {
       "source": "/",
-      "destination": "/gh/index.html",
-      "headers": {
-        "host": "cdn.jsdelivr.net"
-      }
+      "destination": "/gh/index.html"
     },
     {
       "source": "/",
