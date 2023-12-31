@@ -1,0 +1,2 @@
+# jsdelivr-proxy
+jsdelivr proxy
